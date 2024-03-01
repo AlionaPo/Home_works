@@ -25,7 +25,6 @@ for rounds in range(1, 100+1):
                 hats_on_cats[cat] += 1
 
 for cat in range(1, 100+1):
-    if hats_on_cats[cat] = 1:
+    if hats_on_cats[cat] == 1:
             hats_on_cats.append(cat)
 
-print hats_on_cats
