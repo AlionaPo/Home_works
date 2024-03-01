@@ -6,7 +6,7 @@
 # In The third round, you only stop at every third cat(#3, #6, #9, #12, etc.).
 # You continue this process until you’ve made 100 rounds around the cats (e.g., you only visit the 100th cat).
 # Write a program that simply outputs which cats have hats at the end.
-# Optional: Make a function that can calculate hats with any amount of rounds and cats.
+# Optional - DONE: Make a function that can calculate hats with any amount of rounds and cats.
 # Here you should write an algorithm, and after that, try to make pseudo code. Only after that start to work. The code is simple here, but you might struggle with the algorithm. Therefore don`t try to write a code from the first attempt. Don't forget to calculate the complexity of your algorithm.
 # Homework should be uploaded at GitHub.com
 # The result of this HW should be a link to your GitHub code
@@ -26,5 +26,5 @@ for circle_num in range(1, circles):
             else:
                 hats_on_cats[cat] = 1
 
+    print("Sum of hats ", sum(hats_on_cats))
     print(hats_on_cats)
-
