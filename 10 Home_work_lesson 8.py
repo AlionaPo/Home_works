@@ -12,19 +12,19 @@
 # The result of this HW should be a link to your GitHub code
 # To learn how to work in Git, read the first three chapters of this book
 
-hats_on_cats = []
-attempts = 100
+cats_amount = int(input("Enter the number of cats "))
+circles = int(input("Enter the number of circles "))
 
-for rounds in range(1, 100+1):
-    for cat in range(1, 100+1):
-        if cat % rounds ==0:
-            hats_on_cats[cat] += 1
-            if hats_on_cats[cat] = 1:
-                hats_on_cats[cat] -= 1
+
+hats_on_cats = [0 for x in range(cats_amount)]
+
+for circle_num in range(1, circles):
+    for cat in range(len(hats_on_cats)):
+        if (cat + 1) % circle_num == 0:
+            if hats_on_cats[cat]:
+                hats_on_cats[cat] = 0
             else:
-                hats_on_cats[cat] += 1
+                hats_on_cats[cat] = 1
 
-for cat in range(1, 100+1):
-    if hats_on_cats[cat] == 1:
-            hats_on_cats.append(cat)
+    print(hats_on_cats)
 
