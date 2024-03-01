@@ -28,3 +28,9 @@ for circle_num in range(1, circles):
 
     print("Sum of hats ", sum(hats_on_cats))
     print(hats_on_cats)
+
+# for i in interation:
+#   for J in interation2:
+#       print (i,j)
+    
+#Complexity = O(n)**2
