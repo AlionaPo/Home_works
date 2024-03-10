@@ -18,7 +18,7 @@ circles = int(input("Enter the number of circles "))
 
 hats_on_cats = [0 for x in range(cats_amount)]
 
-for circle_num in range(1, circles):
+for circle_num in range(1, circles+1):
     for cat in range(len(hats_on_cats)):
         if (cat + 1) % circle_num == 0:
             if hats_on_cats[cat]:
@@ -26,8 +26,8 @@ for circle_num in range(1, circles):
             else:
                 hats_on_cats[cat] = 1
 
-    print("Sum of hats ", sum(hats_on_cats))
-    print(hats_on_cats)
+print("Sum of hats ", sum(hats_on_cats))
+print("Cats with hats at the end ", hats_on_cats)
 
 # for i in interation:
 #   for J in interation2:
