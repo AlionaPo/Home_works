@@ -1,3 +1,16 @@
+# Net in the Web: The API High-Wire Act
+
+#Create a program that allows you to search for images in gif format. 
+# The program should allow you to enter a search word. 
+# Using this word, search for GIFs using the Giphy API. 
+# As a result, print the links to the GIFs.
+# Optional: Add the Telegram bot to the previous exercise. 
+# Ask the user to enter a search word in the Telegram interface and get a gif image as a result.
+
+# Homework should be submitted via GitHub
+
+
+
 import requests
 
 # search_word = input("What picture to find: ")
