@@ -74,15 +74,19 @@ DESC
 LIMIT 1;
 
 
--- CREATE TABLE user_room(
---     id_user_room INTEGER PRIMARY KEY,
---     user_id INTEGER NOT NULL,
---     room_id INTEGER NOT NULL,
+CREATE TABLE user_room(
+    id_user_room INTEGER PRIMARY KEY,
+    user_id INTEGER NOT NULL,
+    room_id INTEGER NOT NULL,
 
--- FOREIGN KEY user_id
---     REFERENCES users(user_id),
--- FOREIGN KEY room_id
---     REFERENCES rooms(room_id));
+FOREIGN KEY (user_id)
+    REFERENCES users(user_id),
+FOREIGN KEY (room_id)
+    REFERENCES rooms(room_id)
+    );
+
+SELECT * FROM user_room;
+  
 -- ERROR: syntax error at or near "user_id"
 
 -- v2
